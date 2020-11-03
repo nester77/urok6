@@ -1,26 +1,20 @@
 package academy.belhard;
 
-public class Car extends Vehicle {
-    private int doorsCount;
-    private final String NAME_OF_VEHICLE= "Машина";
+public class Motorcycle extends Vehicle{
+    private int maxSpeed;
+    private final String NAME_OF_VEHICLE= "Мотоцикл";
 
-    Car (int wheelCount, int doorsCount){
-        super(wheelCount);
-        this.doorsCount=doorsCount;
-    }
+     Motorcycle (int weelCount, int maxSpeed) {
+         super(weelCount);
+         this.maxSpeed=maxSpeed;
+     }
     @Override
     protected void printInfo() {
-        System.out.println("Транспортное средство: "+NAME_OF_VEHICLE+" - Количество дверей: "+doorsCount+" - Количество колес: "+wheelCount);
+        System.out.println("Транспортное средство: "+NAME_OF_VEHICLE+" - Количество дверей: 0"+" - Количество колес: "+wheelCount);
     }
-
 }
 
 
-//        Создайте класс Car (наследник класса Vehicle)
-//        Добавьте в класс Car поле doorsCount (private int) и создайте конструктор с 2-мя аргументами
-//        (wheelCount и doorsCount)
-//        Реализуйте в классе Car метод printInfo() - должен выводить на экран информацию о машине
-//        (Пример вывода: “Транспортное средство: Машина - Количество дверей: 5 - Количество колес: 4”)
 //        Создайте класс Motorcycle (наследник класса Vehicle)
 //        Добавьте в класс Motorcycle поле maxSpeed (private int) и создайте конструктор с 2-мя аргументами
 //        (wheelCount и maxSpeed)

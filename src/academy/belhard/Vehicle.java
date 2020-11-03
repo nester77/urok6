@@ -6,7 +6,7 @@ public abstract class Vehicle {
       this.wheelCount=wheelCount;
    }
 
-   protected void printInfo();
+   protected abstract void printInfo();
 
 }
 
