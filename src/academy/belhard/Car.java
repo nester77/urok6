@@ -15,6 +15,7 @@ public class Car extends Vehicle implements Costable{
         System.out.println("Транспортное средство: "+NAME_OF_VEHICLE+" - Количество дверей: "+doorsCount+" - Количество колес: "+wheelCount+" - Цена: "+getCost());
     }
 
+    @Override
     public int getCost () {
         return cost;
     }
